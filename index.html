@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Whale Talk</title>
+	<link rel="icon" type="image/x-icon" href="images.jpg" />
+
+	<link rel="stylesheet" href="style.css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+	<style>
+
+		
+	</style>
+</head>
+	
+<body>
+
+<header id = "home">
+	<!--- Section 1: Navbar --->
+	<section class = "navbarSection">
+			<nav id = "navbar">
+				<a href = "#home"><div class = "navDiv">Home</div></a>
+				<a href = "#intro"><div class = "navDiv">Intro</div></a>
+				<a href = "#translator"><div class = "navDiv">Translator</div></a>
+				<a href = "#about"><div class = "navDiv">About</div></a>
+				<a href = "#footer"><div class = "navDiv">Contact/Socials</div></a>
+			</nav>
+	</section>
+</header>
+
+
+<main class = "flexCenterVertical">
+
+	<!--- Section 2: Title --->
+	<section class = "titleSection">
+		<img src="giphy.gif" alt="Google Translate" width="10%" height="10%" />
+	</section>
+	
+	<!--- Section 3: Main Intro--->
+	<section class = "introSection">
+		<div>Welcome to Google's Whale translator! Being at the forefront of design, Google has decided to go beyond humans and start to introduce animal languages, starting with Whales! Mess about with phrases that you could say to Whales, and have fun with this new technology!
+		</div>
+	</section>
+
+	<!--- Section 4: Translator Display --->
+	<section class = "translatorSection">
+		<div class = "flexCenter">
+			<div id = "lastMessage">Last Inputted Message</div>
+			<div id = "lastTranslation">Last Whale Message</div>
+		</div>
+	</section>
+	
+	<!--- Section 4.5 Main Translator --->
+	<section class = "translatorSection" id = "translator">
+		<div class = "flexCenter">
+			<button class = "translatorButton" onclick = "speakWhaleTalk(currentTranslatedPhrase)">Listen</button>
+		</div>
+		<div class = "flexCenter">
+	 <button class = "translatorButton" onclick = "runWhaleTalk()">Translate</button>
+		</div>
+		<div class = "flexCenter">
+			<button class = "translatorButton" id = "historyViewer" onclick = "makeHtmlHistory()">View History</button>
+			<div class = "historyTableClass" id = "historyTable">
+			<table>
+				<tr>
+					<th>Input Phrase</th>
+					<th>Translated Phrase</th>
+				</tr>
+				<tr>
+					<th id = "input0"></th>
+					<th id = "output0"></th>
+				</tr>
+				<tr>
+					<th id = "input1"></th>
+					<th id = "output1"></th>
+				</tr>
+				<tr>
+					<th id = "input2"></th>
+					<th id = "output2"></th>
+				</tr>
+				<tr>
+					<th id = "input3"></th>
+					<th id = "output3"></th>
+				</tr>
+				<tr>
+					<th id = "input4"></th>
+					<th id = "output4"></th>
+				</tr>
+				<tr>
+					<th id = "input5"></th>
+					<th id = "output5"></th>
+				</tr>
+			</table>
+			<button class = "historyTableButton" onclick = "document.getElementById('historyTable').style.display = 'none'">Close History</button>
+			</div>
+		<button class = "translatorButton" onclick = "clearTranslationHistory()">Clear History</button>
+		</div>
+	</section>
+
+	<!--- Section 5: Main About Google --->
+	<section class = "aboutSection" id="about">
+		<h2>About Google Translate</h2>
+
+		<p>
+			Google Translate is a multilingual translation service developed by Google that allows users to translate text, speech, images, and websites between hundreds of languages. It is widely used around the world for quick and accessible communication across language barriers.
+		</p>
+
+		<p>
+			The service uses advanced machine learning technology, specifically neural machine translation (NMT), to provide more accurate and natural-sounding translations. Instead of translating word-by-word, it analyzes entire sentences to better understand context and meaning.
+		</p>
+
+		<h3>Key Features</h3>
+		<ul>
+			<li>Text translation between over 100 languages</li>
+			<li>Voice input and real-time speech translation</li>
+			<li>Camera translation for signs, menus, and documents</li>
+			<li>Offline translation support</li>
+			<li>Website translation directly in your browser</li>
+		</ul>
+
+		<h3>Why It Matters</h3>
+		<p>
+			Google Translate helps people communicate globally, making information more accessible regardless of language. Whether you're traveling, learning a new language, or just curious, it breaks down communication barriers and connects people worldwide.
+		</p>
+
+		<p>
+			This Whale Talk project is inspired by the idea of translation; taking something complex (like whale sounds or encoded language) and converting it into something humans can understand.
+		</p>
+	</section>
+</main>
+  
+
+<footer>
+	<!--- Section 6: Footer --->            
+	<section id = "footer">
+		<div> Thank you for visiting google's whale talk website!</div>
+		<div> Although we are confident in our translations, please remember to keep a safe distance from all wild animls!</div>
+		<div> If you'd like to support us further, don't worry about it! we're google after all. </div>
+		<p> Contact us on:</p>
+<a href="https://about.google/company-info/contact-google/" target = "_blank"><img src = "Socials Logos/google-logo.webp" alt="Google Help and Support" /></a>
+<a href="https://x.com/Google?lang=en/" target = "_blank"><img src = "Socials Logos/x-logo.png" alt="X" /></a>
+			<a href="https://www.instagram.com/google/?hl=en" target = "_blank"><img src = "Socials Logos/Instagram_logo_2022.svg" alt="Instagram" /></a>
+			<a href="https://www.threads.com/@google" target = "_blank"><img src = "Socials Logos/Threads_(app).png" alt="Threads" /></a>
+	</section>
+</footer>
+
+	<script src="script.js?v=2" defer></script>
+	
+</body>
+</html>
