@@ -1,6 +1,6 @@
 # Whale Talk
 
-A static web page that "translates" a phrase into whale language by extracting vowels and playing back matching whale sounds. Built as a class project (originally on Replit).
+A static web page that "translates" a phrase into whale language by extracting vowels and playing back matching whale sounds. Built as a Grade 11 CS class project exploring string manipulation and array traversal in JavaScript. (originally on Replit).
 
 ## How it works
 
