@@ -26,4 +26,4 @@ npx serve .
 
 ## Credits
 
-Adrian (JS), Xavier (HTML/CSS), Jacob (HTML/CSS/JS)
+Adrian Mak (JS), Xavier Van Straalen (HTML/CSS), Jacob Bergerhoff (HTML/CSS/JS)
